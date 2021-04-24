@@ -65,7 +65,6 @@ int main(int argc, char *argv[])
 		}
 	}
 	
-	
 	//! 初期値:2(最小の素数)
 	//! nが上限以下の間ループ
 	for(n=2; n < limit; n++)

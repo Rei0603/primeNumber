@@ -3,16 +3,16 @@
 using namespace std;
 static inline bool isPn(size_t n, vector<size_t>& pn)
 {
-		bool div = false;
-		for(auto&& x :pn)
+	bool div = false;
+	for(auto&& x :pn)
+	{
+		if(n % x == 0)
 		{
-			if(n % x == 0)
-			{
-				div=true;
-				break;
-			}
+			div=true;
+			break;
 		}
-		return div;
+	}
+	return div;
 }
 int main(int argc, char *argv[])
 {

@@ -1,7 +1,9 @@
 #include <iostream>
-#include <vector>
+#include <deque>
 using namespace std;
-static inline bool isPn(size_t n, vector<size_t>& pn)
+
+template <typename C>
+static inline bool isPn(size_t n, C& pn)
 {
 	bool div = false;
 	for(auto&& x :pn)
@@ -16,7 +18,7 @@ static inline bool isPn(size_t n, vector<size_t>& pn)
 }
 int main(int argc, char *argv[])
 {
-	vector<size_t> pn;
+	deque<size_t> pn;
 	size_t n=2;
 	while(n < SIZE_MAX)
 	{
